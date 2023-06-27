@@ -1152,6 +1152,9 @@ ul.imgs {
 	ul.imgs {
 		height: 450px;
 	}
+	.slider {
+		height:370px;
+	}
 	
 }
 
@@ -1206,6 +1209,9 @@ ul.imgs {
 	}
 	ul.imgs {
 		height: 400px;
+	}
+	.slider {
+		height:280px;
 	}
 	
 }
