@@ -18,7 +18,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "akcent.schentea@gmail.com";
+        $recipient = "schentea@naver.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -29,7 +29,8 @@
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        $email_headers = "From: $name <$email>\r\n";
+        $email_headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
