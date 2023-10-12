@@ -85,12 +85,13 @@
 	<section id="mu-hero">
 		<div class="container">
 			<div class="row">
-
 			<div class="col-md-6 col-sm-6 col-sm-push-6">
 			<div class="mu-hero-right">
 			<div class="slider">			
 				<ul id="imgholder" class="imgs">
-					<li><img src="assets/images/rc카.jpg"></li>
+					<li><img src="assets/images/rc1.jpg"></li>
+					<li><img src="assets/images/rc2.jpg"></li>
+                    <li><img src="assets/images/rc3.jpg"></li>
 				</ul>
 			</div>
 			
@@ -100,9 +101,9 @@
 				<div class="col-md-6 col-sm-6 col-sm-pull-6">
 					<div class="mu-hero-left">
 						<h1>어서오세요!<br>제발 굴러가죠 홈페이지 오신 것을 환영합니다.</h1>
-						<p class="font1">RC카는 현대적인 기술과 역동적인 디자인이 하나로 어우러진 RC(라디오 컨트롤)<br>자동차입니다. 이 자동차는 고성능 모터와 정밀한 조종 시스템이 조화롭게 결합되어, 극한의 속도와 조작성을 통해 진정한 스릴을 경험할 수 있습니다.</p>
-						<a href="assets/date/4조 굴러가죠 캡스톤 중간발표.pptx" class="mu-primary-btn" class="font1">Download Now!</a>
-						<span class="font1">*굴러가죠 PPT를 다운 받을 수 있습니다.</span>
+						<p class="font1">RC카는 현대적인 기술과 역동적인 디자인이 하나로 어우러진 RC카입니다. <br>이 자동차는 고성능 모터와 정밀한 조종 시스템이 조화롭게 결합되어, 극한의 속도와 조작성을 통해 진정한 스릴을 경험할 수 있습니다.</p>
+						<a href="assets/date/4조 굴러가죠 캡스톤 중간발표.pdf" class="mu-primary-btn" class="font1">Download Now!</a>
+						<span class="font1">*굴러가죠 PDF를 다운 받을 수 있습니다.</span>
 					</div>
 				</div>	
 
@@ -187,7 +188,7 @@
 							<div class="mu-heading-area">
 								<h2 class="mu-heading-title">Project</h2>
 								<span class="mu-header-dot"></span>
-								<p>이 프로젝트는  RC카를 활용하여 자율주행 시스템을 개발하는 것을 목표로 합니다.<br>자율주행 시스템에는 LIDAR센서를 사용하고 주변 환경을 감지하며, 이를 기반으로 실시간으로 주행 경로를 조정하여 안전하고 자율적으로 이동할 수 있는 시스템을 구축을 목표로 했습니다.</p>
+								<p>이 프로젝트는  RC카를 활용하여 자율주행 시스템을 개발하는 것을 목표로 합니다.<br>자율주행 시스템에는 여러가지 센서를 사용하고 주변 환경을 감지하며, 이를 기반으로 실시간으로 주행 경로를 조정하여 안전하고 자율적으로 이동할 수 있는 시스템을 구축을 목표로 했습니다.</p>
 							</div>
 
 							
@@ -201,9 +202,10 @@
 											</span>
 											<h4>프로젝트 목표</h4>
 											<p>1. 주행 경로를 계획하는 알고리즘을 개발하는 것이 목표</p>
-											<p>2. 라이다 센서를 활용하여 주변 환경을 정확하게 감지하고 장애물을 식별하는 것이 목표</p>
+											<p>2. 초음파 센서를 활용하여 주변 환경을 정확하게 감지하고 장애물을 식별하는 것이 목표</p>
 											<p>3. 자율주행 시스템의 성능과 안정성을 개선하는 것이 목표</p>
 											<p>4. 사용자가 목표 지점을 설정하고 알고리즘을 활용하여 RC카가 자율적으로 주행이 가능한 상태로 만드는 것이 목표</p>
+											<p>5. 프로젝트를 미래에 확장하고 개선하기 위한 유연성을 고려하여 설계하고 개발하는 것이 목표</p>
 										</div>
 									</div>
 									<!-- 하드웨어 조사 -->
@@ -213,9 +215,9 @@
 												<i class="fa fa-area-chart" aria-hidden="true"></i>
 											</span>
 											<h4>하드웨어 조사</h4>
-											<p>컨트롤러 : 라즈베리 파이4 (Raspberry Pi),아두이노,오렌지 파이</p>
+											<p>컨트롤러 : 라즈베리 파이4 (Raspberry Pi)</p>
 											<p>모터 및 서보 모터 : L298 모터 드라이버,L9110 모터 드라이버 </p>
-											<p>센서 : 초음파 센서(HC-SR04),CYGLIDAR(Light Detection and Ranging),적외선 센서(IR)</p>
+											<p>센서 : 초음파 센서(HC-SR04),적외선 센서(IR)</p>
 											<p>프레임 : 아두이노 스마트 RC카(DV1802-KIT)</p>
 										</div>
 									</div>
@@ -227,7 +229,8 @@
 											</span>
 											<h4>하드웨어 선정 이유</h4>
 											<p>라즈베리 파이4 : USB포트,HDMI포트,Wi-Fi,블루투스 등 다양한 연결 및 기능 제공</p>
-											<p>CYGLIDAR센서 : 레이저를 사용하여 주변 환경의 거리와 위치 정보를 측정하는 기술</p>
+											<p>적외선센서 : RC카가 선을 따라갈 수 있도록 도와줌</p>
+											<p>초음파센서 : 주변 환경의 거리와 위치 정보를 측정하는 기술</p>
 											<p>L298 모터 드라이버 : 모터를 제공하고 방향을 제어하는데 사용</p>
 											<p>DV1802-KIT : 주행 시스템과 다른 구성 요소들을 지탱하고 결합시키는 역할</p>
 										</div>
@@ -274,7 +277,7 @@
 							<div class="mu-heading-area">
 								<h2 class="mu-heading-title">Self-Driving Images</h2>
 								<span class="mu-header-dot"></span>
-								<p class="font1">아직 Lidar센서를 적용하지 않았지만 초음파 센서로 자율주행이 되고 있다는 걸 보여주고 있습니다.<br>(Lidar는 현재 진행중)</p>
+								<p class="font1">초음파 센서로 자율주행이 되고 있다는 걸 보여주고 있습니다.<br></p>
 							</div>
 
 							<div class="mu-video-review-content">
@@ -316,9 +319,8 @@
 									</div>
 									<div class="col-md-7">
 										<div class="mu-author-info">
-											<h3>4조 굴러가죠 팀</h3>
-											<p class="font1">라이다 센서를 통합하여 더욱 정확하고 안정적인 자율주행 시스템을 개발하는 것은 향후 계획이며, 주행 안전성을 향상시키기 위해 장애물 회피 기능과 차선 유지 기능을 최적화하고, 주행 속도 조절<br>알고리즘을 개선하여 보다 안정적인 주행을 실현하도록 하겠습니다.</p>
-											<p class="font1">다양한 지형과 도로 상황에서의 주행 시험을 통해 시스템의 안정성과 신뢰성을 검증하고, 필요한 수정 및 최적화 작업을 수행하겠습니다.</p>
+											<h3>4조 굴러가죠</h3>
+											<p class="font1">여러가지 센서를 통합하여 더욱 정확하고 안정적인 주행 시스템을 개발하는 것은 향후 계획이며,<br> 주행 안전성을 향상시키기 위해 장애물 회피 기능과 차선 유지 기능을 최적화하고, 주행 속도 조절<br>알고리즘을 개선하여 보다 안정적인 주행을 실현하도록 하겠습니다.<br>다양한 지형과 도로 상황에서의 주행 시험을 통해 시스템의 안정성과 신뢰성을 검증하고, 필요한 수정 및 최적화 작업을 수행하겠습니다.</p>
 										</div>
 									</div>
 								</div>
@@ -402,6 +404,7 @@
 										</div>
 									</div>
 									<!-- / Pricing Single Content -->
+									
 
 									<!-- Pricing Single Content -->
 									<div class="col-sm-6 col-md-4">
@@ -409,9 +412,9 @@
 
 
 											<div class="mu-pricing-single-head">
-												<h4>CygLiDAR D1</h4>
+												<h4>HC-SR04 초음파센서</h4>
 												<p class="mu-price-tag">
-													187,000<span>원</span> 
+													8,500<span>원</span> 
 												</p>
 											</div>
 
@@ -423,7 +426,7 @@
 											</ul>
 
 											<div class="mu-pricing-single-footer">
-												<a href="https://smartstore.naver.com/cygbot/products/5359233933?NaPm=ct%3Dljoccx9k%7Cci%3Dfcf29e79edb4718b6be837ef8b89846f4c3e18aa%7Ctr%3Dsls%7Csn%3D2898328%7Chk%3De81803b8cbf8ec840c396b3fb3799c0cc76e9223" class="mu-order-btn"><b>구매 !</b></a>
+												<a href="https://smartstore.naver.com/geumakshopping/products/9165193648?NaPm=ct%3Dlnlpbpf4%7Cci%3D608e21091acb5a3ee77f3b1368be3568ccc76af4%7Ctr%3Dsls%7Csn%3D9068164%7Chk%3D924e5cdb34854581aaf4ac19e5cd6ea639f04588" class="mu-order-btn"><b>구매 !</b></a>
 											</div>
 											
 											
@@ -461,37 +464,37 @@
 										<p class="font1">"이 프로젝트를 통해 팀원들과의 협업, 문제 해결 능력, 기술 습득 등 다양한 면에서 성장할 수 있었습니다. 또한, <br>캡스톤 디자인 프로젝트를 통해 제가 선택한 전공 분야가 아닌 다른 분야에도 관심을 가지게 되는 계기가 되었으며 맡은 일에 대한 열정과 흥미를 더욱 확고히 느낄 수 있었습니다.<br>마지막으로 앞으로의 성장에 조금이지만 영향을 끼친 소중한 경험이었다고 생각합니다."</p>
 										<img class="mu-rt-img" src="assets/images/김동영.jpg" alt="img">
 										<h5 class="mu-rt-name">김동영</h5>
-										<span class="mu-rt-title">조장, 하드웨어 담당.</span>
+										<span class="mu-rt-title">조장<br>하드웨어 담당</span>
 									</li>
 									<li>
 										<p class="font1">"캡스톤 디자인 프로젝트를 진행하면서 많은 경험을 쌓을 수 있었고, 대학생으로서의 성장을 실감할 수 있었습니다. <br>이 프로젝트를 통해 이론적인 지식뿐만 아니라 개발 과정에서의 문제 해결 능력을 키울 수 있었습니다."</p>
 										<img class="mu-rt-img" src="assets/images/박장현.jpg" alt="img">
 										<h5 class="mu-rt-name"> 박장현</h5>
-										<span class="mu-rt-title">하드웨어 담당,소프트웨어 보조.</span>
+										<span class="mu-rt-title">하드웨어 담당<br>소프트웨어 보조</span>
 									</li>
 									<li>
 										<p class="font1">"캡스톤 디자인 프로젝트를 통해 실제로 사용되는 기술과 도구를 접할 수 있었습니다. 졸업 후 취업에 큰 도움이 될 것 같고 프로젝트를 통해 배운 기술을 직접 적용하고 실제 결과를 확인함으로써<br> 전공 분야에 대한 실무적인 이해를 높일 수 있었습니다."</p>
 										<img class="mu-rt-img" src="assets/images/최재식.jpg" alt="img">
 										<h5 class="mu-rt-name"> 최재식</h5>
-										<span class="mu-rt-title">웹 페이지 담당,하드웨어 담당.</span>
+										<span class="mu-rt-title">웹 페이지 제작<br>하드웨어 담당<br>소프트웨어 보조</span>
 									</li>
 									<li>
 										<p class="font1">"프로젝트를 하면서 하드웨어와 소프트웨어 측면에서 여러가지 문제들이 있었지만, 저희는 문제를 해결하기 위해 노력했고, 끊임없는 실험과 테스트를 통해 문제점들을 하나씩 해결해 나가며 결과를 만들어 낼 수 있었습니다. 이러한 과정에서 우리는 문제 해결 능력을 향상시킬 수 있었고, 창의적인 아이디어를 발전시킬 수 있는 기회를 얻었습니다."</p>
 										<img class="mu-rt-img" src="assets/images/권희제.png" alt="img">
 										<h5 class="mu-rt-name"> 권희제</h5>
-										<span class="mu-rt-title">소프트웨어 담당.</span>
+										<span class="mu-rt-title">소프트웨어 담당</span>
 									</li>
 									<li>
 										<p class="font1">"프로젝트를 진행하면서 문제 해결 과정에서 많은 도전과 실패를 경험했습니다. 하지만 그 과정에서 얻은 교훈은 더욱 중요한 성취로 다가왔습니다. 문제를 발견하고, 분석하고, 창의적인 아이디어를 도출하여 구현해 나가는 과정은 저에게 큰 자신감과 동기부여가 되었고 앞으로 남은 기간 동안 좋은 결과가 있도록 프로젝트에 임하겠습니다."</p>
 										<img class="mu-rt-img" src="assets/images/한제노.jpg" alt="img">
 										<h5 class="mu-rt-name"> 한제노</h5>
-										<span class="mu-rt-title">소프트웨어 담당.</span>
+										<span class="mu-rt-title">소프트웨어 담당<br>포스터 제작</span>
 									</li>
 									<li>
 										<p class="font1">"프로젝트를 시작하기 전에는 많은 불확실성과 어려움에 직면했습니다. 하지만 팀원들과의 협력과 통해 이러한 어려움을 극복할 수 있었습니다. 서로의 아이디어와 각자의 노력으로 수동 조작까지 성공적으로 수행할 수 있었고 방학 기간 중에 자율주행까지 완성할 수 있도록 팀원들과 최선을 다하겠습니다"</p>
 										<img class="mu-rt-img" src="assets/images/최현기.jpg" alt="img">
 										<h5 class="mu-rt-name"> 최현기</h5>
-										<span class="mu-rt-title">소프트웨어 담당,웹페이지 보조.</span>
+										<span class="mu-rt-title">소프트웨어 담당<br>웹페이지 보조<br>App 구현</span>
 									</li>
 
 								</ul>
@@ -553,6 +556,7 @@
 	
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<script type="text/javascript" src="assets/js/slider.js"></script>
 	
     
   </body>
